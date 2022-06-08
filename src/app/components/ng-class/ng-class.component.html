@@ -1,0 +1,3 @@
+<p [ngClass]="error ? 'error' : 'success'">Mi nombre es {{ nombre }} y tengo {{ (edad + 1) }} años</p>
+<p [ngClass]="{'error': error}">Soy de colombia y vivo en barranquilla</p>
+<button (click)="error = !error">Cambiar color</button>

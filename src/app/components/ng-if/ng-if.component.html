@@ -1,0 +1,7 @@
+<div *ngIf="verDiv; else elseTemplate">
+  <p>Este es el texto que se debe mostrar cuando la variable verDiv es verdadera</p>
+</div>
+<ng-template #elseTemplate>
+  <p>Div escondido</p>
+</ng-template>
+<button (click)="verDiv = !verDiv"> {{ verDiv ? 'Esconder div' : 'Mostrar div'}} </button>

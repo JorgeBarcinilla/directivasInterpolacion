@@ -1,0 +1,16 @@
+<div [ngSwitch]="opcion">
+  <div *ngSwitchCase="'opcion1'">
+    <p>Este es el texto que se debe mostrar cuando la variable opciones es opcion1</p>
+  </div>
+  <div *ngSwitchCase="'opcion2'">
+    <p>Este es el texto que se debe mostrar cuando la variable opciones es opcion2</p>
+  </div>
+  <div *ngSwitchCase="'opcion3'">
+    <p>Este es el texto que se debe mostrar cuando la variable opciones es opcion3</p>
+  </div>
+  <div *ngSwitchDefault>
+    <p>Este es el texto que se debe mostrar cuando la variable opciones no es ni opcion1 ni opcion2</p>
+  </div>
+</div>
+
+<button (click)="cambiarOpcion()">Cambiar opcion</button>

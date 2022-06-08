@@ -1,0 +1,5 @@
+<div appRoundBlock style="padding: 10px; border: 1px solid red">
+  <p [style.font-size]="textSize + 'px'">Este texto cambia de tamaño dinamicamente</p>
+</div>
+<button (click)="textSize = textSize + 1">Aumentar tamaño</button>
+<button (click)="textSize = textSize - 1">Disminuir tamaño</button>
